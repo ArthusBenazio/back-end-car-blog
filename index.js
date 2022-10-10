@@ -38,8 +38,8 @@ app.use("/api/posts", postRoutes)
      res.json("It works")
  })*/
 
- const PORT = process.env.PORT
+ const port = process.env.PORT || 8800;
 
-app.listen(PORT || 8800, () => {
-    console.log(`Connected! on port ${Port}`)
+app.listen(port, () => {
+    console.log(`Connected! on port ${port}`)
 })
